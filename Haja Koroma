@@ -1,0 +1,67 @@
+import java.util.Random;
+import java.util.Scanner;
+public class eightball
+{
+	public static void main(String[] args) {
+	    
+	    //ask user to type question
+	 Scanner keyboard = new Scanner(System.in);
+	    System.out.println("Type in a yes or no question");
+	    //read the input
+	 String ques = keyboard.nextLine();
+	    System.out.println(ques);
+	    
+	//pick a random # up to the # of options  
+	    Random ok = new Random();
+	    int okay = ok.nextInt(20);
+	//holds output
+	    String result = "";
+	    
+	    
+    if (okay == 1)
+	        result = "It is certain";
+	else if (okay == 2)
+	        result = "It is decidely so";
+	else if (okay ==3)
+	        result = "Without a doubt";
+	else if (okay == 4)
+	        result = "Yes definitely";
+	else if (okay == 5)
+	        result = "You may rely on it";
+	else if (okay == 6)
+	        result = "As I see it, yes";
+	else if (okay == 7)
+	        result = "Most likely";
+	else if (okay == 8)
+	        result = "Outlook good";
+	else if (okay == 9)
+	        result = "Yes";
+	else if (okay == 10)
+	        result = "Signs point to yes";
+	else if (okay == 11)
+	        result = "Reply hazy, try again";
+	else if (okay == 12)
+	        result = "Ask again later";
+	else if (okay == 13)
+            result = "Better not tell you now";
+    else if (okay == 14)
+	        result = "Cannot predict now";
+	else if (okay == 15)
+	        result = "Concentrate and ask again";
+	else if (okay == 16)
+	        result = "Don't count on it";
+	else if (okay == 17)
+	        result = "My reply is no";
+	else if (okay == 18)
+	        result = "My sources say no";
+	else if (okay == 19)
+	        result = "Outlook look good";
+	else if (okay == 20)
+	        result = "Very doubtful";
+	else 
+	    result = "Error";
+	 
+	 System.out.println("Eight ball says " + result);
+	 
+	}
+}
